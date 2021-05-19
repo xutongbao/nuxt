@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/light/login/Login", {data:[{}],fetch:{},mutations:void 0});
