@@ -47,7 +47,7 @@ export default {
         .then(res => {
           if (res.code === 200) {
             console.log("成功");
-            this.$router.push('/light/home/home')
+            this.$router.push('/light/home/Home')
           }
         });
     }

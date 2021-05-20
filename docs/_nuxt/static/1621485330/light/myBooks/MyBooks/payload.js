@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/light/mybooks/mybooks", {data:[{}],fetch:{},mutations:void 0});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/light/me/me", {data:[{}],fetch:{},mutations:void 0});
