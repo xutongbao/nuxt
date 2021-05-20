@@ -1,5 +1,7 @@
 <template>
-  <div class="m-main">home</div>
+  <div class="m-main">
+    <button>退出</button>
+  </div>
 </template>
 
 <script>
@@ -8,4 +10,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>

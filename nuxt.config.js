@@ -1,30 +1,35 @@
+import hooks from './hooks'
 export default {
   target: 'static', // default is 'server'
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt',
+    title: '小米书城',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: '小米书城是基于vue服务端渲染的Demo项目' },
+      { hid: 'Keywords', name: 'Keywords', content: '小米书城,Vue,电商' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://at.alicdn.com/t/font_1594887_5sfi2gled8.css'
+      }      
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'ant-design-vue/dist/antd.css',
     '~/assets/css/light.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/antd-ui'
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -57,5 +62,8 @@ export default {
   },
   router: {
     base: '/nuxt/'
-  }
+  },
+  // hooks() {
+  //   hooks(this)
+  // }
 }

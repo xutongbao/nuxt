@@ -1,11 +1,11 @@
 body{padding: 0;margin: 0;}
-.m-login-icon{display: inline-block;vertical-align: top;margin: 4px 0 0 -20px;cursor: pointer;}
+.m-login-icon{display: inline-block;vertical-align: top;margin: 4px 0 0 -24px;cursor: pointer;}
 .m-wrap{display: flex;flex-direction: column; position: absolute;top:0;right: 0;left: 0;bottom: 0;}
 .m-header{line-height: 40px;text-align: center;background: red;color: white;}
 .m-main{flex:1;}
 .m-footer{display: flex; height: 50px;border-top: 1px solid #ddd;}
 .m-footer-item{flex:1;text-align: center;color: #333;text-decoration: none;}
-.m-footer-item.router-link-active{color: red;}
+.m-footer-item.nuxt-link-active{color: red;}
 .m-footer-icon{display: block; margin: 4px 0 0; font-size: 26px;}
 .m-footer-text{font-size: 12px;}
 .m-home{display: flex;overflow-y: auto;}

@@ -1,5 +1,5 @@
 <template>
-  <div class="m-main">home</div>
+  <div class="m-main">书包</div>
 </template>
 
 <script>
@@ -8,4 +8,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>

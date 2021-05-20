@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{1198:function(n,t,e){"use strict";e.r(t);var l={},o=e(84),component=Object(o.a)(l,(function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",[n._v("\n  登录页\n  "),e("NuxtLink",{attrs:{to:"/light/home/Home"}},[n._v("去首页")])],1)}),[],!1,null,null,null);t.default=component.exports}}]);
