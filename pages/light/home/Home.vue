@@ -6,7 +6,6 @@
 </template>
 
 <script>
-//import axios from 'axios'
 export default {
   layout: "light/main",
   head: {

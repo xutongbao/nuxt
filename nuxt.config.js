@@ -69,9 +69,6 @@ export default {
   router: {
     base: '/nuxt/'
   },
-  loading: {
-    color: 'lightblue',
-    height: '5px'
-  },
+  loading: false,
   serverMiddleware: ['~/middleware/logger']
 }

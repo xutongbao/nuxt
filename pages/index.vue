@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import Api from "../api";
-
 export default {
   head: {
     title: "小米书城-登录",
@@ -42,11 +40,9 @@ export default {
       this.visible = !this.visible;
     },
     handleLogin() {
-      Api.light
-        .login({ username: this.username, password: this.password })
+      this.$axios.post('/api/login', { username: this.username, password: this.password })
         .then(res => {
           if (res.code === 200) {
-            console.log("成功");
             this.$router.push('/light/home/Home')
           }
         });
