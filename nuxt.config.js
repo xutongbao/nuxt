@@ -1,4 +1,3 @@
-import hooks from './hooks'
 export default {
   target: 'static', // default is 'server'
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -36,7 +35,8 @@ export default {
   components: {
     dirs: [
       '~/components',
-      '~/components/light'
+      '~/components/light',
+      '~/components/light/home'
     ]
   },
 
@@ -55,15 +55,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
+    cssSourceMap: true,
   },
 
+  buildDir: 'nuxt-dist',
+  
   generate: {
     dir: 'docs'
   },
   router: {
     base: '/nuxt/'
   },
-  // hooks() {
-  //   hooks(this)
-  // }
 }

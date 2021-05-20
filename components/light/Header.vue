@@ -1,10 +1,14 @@
 <template>
-  <div class="m-header">小米书城</div>
+  <div class="m-header">{{header}}</div>
 </template>
 
 <script>
 export default {
-
+  computed: {
+    header() {
+      return this.$store.state.light.header
+    }
+  }
 }
 </script>
 
