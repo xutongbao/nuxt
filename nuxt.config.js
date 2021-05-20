@@ -28,7 +28,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-
+    '~/plugins/axios.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,7 +51,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:81',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -67,4 +69,9 @@ export default {
   router: {
     base: '/nuxt/'
   },
+  loading: {
+    color: 'lightblue',
+    height: '5px'
+  },
+  serverMiddleware: ['~/middleware/logger']
 }

@@ -2,7 +2,7 @@ import Api from "../../api"
 
 export default {
   async getList({ commit }) {
-    const res = await Api.light.list()
+    const res = await this.$axios.get('/api/list')
     commit({ type: 'setState', key: 'list', value: res.data })
   },
   async getMyBooks({ commit }) {
