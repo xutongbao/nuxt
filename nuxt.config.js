@@ -1,5 +1,5 @@
 export default {
-  target: 'server', // default is 'server'  static
+  target: 'static', // default is 'server'  static
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '小米书城',
