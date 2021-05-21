@@ -9,7 +9,7 @@
 export default {
   layout: "light/main",
   head: {
-    title: "小米书城-首页",
+    title: "小米书城-首页1",
     meta: [
       { hid: "description", name: "description", content: "小米书城首页" },
       { hid: "Keywords", name: "Keywords", content: "小米书城,首页" }

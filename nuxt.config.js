@@ -1,5 +1,5 @@
 export default {
-  target: 'static', // default is 'server'
+  target: 'server', // default is 'server'  static
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '小米书城',
@@ -54,6 +54,13 @@ export default {
   axios: {
     baseURL: 'http://localhost:81',
   },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: 'https://rough-tan-board.glitch.me'
+    }
+  },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
