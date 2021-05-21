@@ -19,12 +19,20 @@ export default {
     }
   },
   updated() {
+    console.log('子组件更新')
     let topArr = [...document.getElementsByClassName("js-category")].map(
       item => item.offsetTop
     );
     topArr.push(Infinity);
-    this.$emit("onTopArr", topArr)
-  },  
+    this.$emit("onTopArr", topArr);
+  },
+  mounted() {
+    console.log("子组件挂载完");
+    let topArr = [...document.getElementsByClassName("js-category")].map(
+      item => item.offsetTop
+    );
+    topArr.push(Infinity);
+  }
 };
 </script>
 

@@ -146,8 +146,20 @@ export default {
       });
     }
   },
+  updated() {
+    console.log('父组件更新')
+    topArr = [...document.getElementsByClassName("js-category")].map(
+      item => item.offsetTop
+    );
+    topArr.push(Infinity);    
+  },
   mounted() {
+    console.log('父组件挂载完')
     this.$refs.list.scrollTop = this.$store.state.light.scrollTop;
+    topArr = [...document.getElementsByClassName("js-category")].map(
+      item => item.offsetTop
+    );
+    topArr.push(Infinity);      
   }
 };
 </script>

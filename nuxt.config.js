@@ -66,6 +66,9 @@ export default {
   build: {
     extractCSS: true,
     cssSourceMap: true,
+    extend(config) {
+      config.devtool = 'source-map'
+    }
   },
 
   buildDir: 'nuxt-dist',
