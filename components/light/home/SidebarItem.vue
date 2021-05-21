@@ -21,8 +21,8 @@ export default {
   },
   methods: {
     handleNav(id) {
-      // let el = document.getElementById(id)
-      // el.scrollIntoView({ block: 'start', behavior: 'smooth' })
+      let el = document.getElementById(id)
+      el.scrollIntoView({ block: 'start', behavior: 'smooth' })
       this.$store.commit({ type: "light/setState", key: "currentId", value: id })
       this.$store.commit({ type: 'light/setState', key: 'isRealScroll', value: false })      
     }

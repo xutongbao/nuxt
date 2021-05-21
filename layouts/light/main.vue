@@ -3,6 +3,7 @@
     <Header></Header>
     <Nuxt></Nuxt>
     <Footer></Footer>
+    <Loading></Loading>
   </div>
 </template>
 
