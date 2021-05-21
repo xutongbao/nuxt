@@ -8,7 +8,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' },
       { hid: 'description', name: 'description', content: '小米书城是基于vue服务端渲染的Demo项目' },
       { hid: 'Keywords', name: 'Keywords', content: '小米书城,Vue,电商' }
     ],
